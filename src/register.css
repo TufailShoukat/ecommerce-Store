@@ -1,0 +1,98 @@
+
+
+label {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.gg {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(10px);
+    transition: background 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.row.main {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    transition: transform 0.6s ease-in-out, background 0.6s ease-in-out;
+    width: 50%;
+    padding: 2rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.glowing-text {
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.glowing-text:hover:hover {
+    color: #ff6ec7;
+    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7, 0 0 50px #ff6ec7, 0 0 60px #ff6ec7, 0 0 70px #ff6ec7;
+}
+
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.links {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links:hover {
+    color: #3498db;
+}
